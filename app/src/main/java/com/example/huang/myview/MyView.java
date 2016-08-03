@@ -13,16 +13,22 @@ import android.widget.Toast;
 
 public class MyView extends Activity {
 
-    TopBar mTopBar;
+    private TopBar mTopBar;
+    private ScaleDiagram mScaleDiagram;
+    private String str;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_view);
 
         mTopBar = (TopBar) findViewById(R.id.topBar);
+        mScaleDiagram = (ScaleDiagram) findViewById(R.id.scaleDiagram);
 
         //mTopBar.setButtonVisable(0,false);
         mTopBar.setTitle("修改标题");
+        mScaleDiagram.setCircle(200);
+        mScaleDiagram.setArc(120);
+        mScaleDiagram.setText(str);
 
         bindListener();
 
