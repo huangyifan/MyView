@@ -22,13 +22,13 @@ public class MyView extends Activity {
         setContentView(R.layout.activity_my_view);
 
         mTopBar = (TopBar) findViewById(R.id.topBar);
-        mScaleDiagram = (ScaleDiagram) findViewById(R.id.scaleDiagram);
+      /*  mScaleDiagram = (ScaleDiagram) findViewById(R.id.scaleDiagram);
 
         //mTopBar.setButtonVisable(0,false);
         mTopBar.setTitle("修改标题");
         mScaleDiagram.setCircle(200);
         mScaleDiagram.setArc(120);
-        mScaleDiagram.setText(str);
+        mScaleDiagram.setText(str);*/
 
         bindListener();
 

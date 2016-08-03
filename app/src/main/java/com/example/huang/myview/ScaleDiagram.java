@@ -17,7 +17,6 @@ public class ScaleDiagram extends View {
     private float length = 400;
     private float mCircleXY;
     private float mRadius;
-    private float mShowTextSize;
     private float mSwepAngle;
     private Paint mCirclePaint,mArcPaint,mTextPaint;
     private RectF mArcRectF;
@@ -76,7 +75,7 @@ public class ScaleDiagram extends View {
         if (length != 0){
             this.length = length;
         }else {
-            this.length = 20;
+            this.length = 400;
         }
 
         this.invalidate();
